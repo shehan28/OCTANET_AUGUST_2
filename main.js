@@ -2,13 +2,13 @@ const taskInput = document.getElementById('task-input');
 const addTaskButton = document.getElementById('add-task');
 const taskList = document.getElementById('task-list');
 
-// Load tasks from local storage
+
 loadTasks();
 
-// Add task event listener
+
 addTaskButton.addEventListener('click', addTask);
 
-// Function to add a new task
+
 function addTask() {
   const taskText = taskInput.value.trim();
   if (taskText !== '') {
@@ -23,21 +23,21 @@ function addTask() {
     taskItem.appendChild(deleteButton);
     taskList.appendChild(taskItem);
 
-    // Save tasks to local storage
+  
     saveTasks();
 
     taskInput.value = '';
   }
 }
 
-// Function to remove a task
+
 function removeTask(taskItem) {
   taskList.removeChild(taskItem);
-  // Save tasks to local storage
+  
   saveTasks();
 }
 
-// Function to load tasks from local storage
+
 function loadTasks() {
   const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
   tasks.forEach(task => {
