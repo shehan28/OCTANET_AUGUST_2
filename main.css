@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url('documents-icon-blue-backgroundclipboard-task-management-todo-check-list-work-project-plan-concept-fast-checklist-posting-plan-white-background-productivity-checklist-3d-rendering_105386-2105.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 25px;
+    padding: 20px;
+    position:left;
+    right:150px;
+  }
+  
+  h1 {
+    text-align:left;
+  }
+  
+  .input-container {
+    display: flex;
+    margin-bottom: 50px;
+    align-items:right;
+    right: 150px;
+  }
+  
+  #task-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  #add-task {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    
+  }
+  
+  #task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:whitesmoke;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+  
+  #task-list li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  #task-list li button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
